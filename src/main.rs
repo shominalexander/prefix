@@ -36,7 +36,10 @@ fn main() {
 
       for j in 0..minimum {
        if next[j] != first[j] {
-        minimum = j;
+        if j < minimum {
+         minimum = j;
+
+        }//if j < minimum {
 
         break;
        }//if next[j] != first[j] {
